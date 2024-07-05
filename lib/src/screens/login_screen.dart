@@ -1,3 +1,4 @@
+import 'package:authentication_app/src/screens/dashboard.dart';
 import 'package:authentication_app/src/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -56,8 +57,7 @@ class LoginScreen extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                      //onPressed: () => Get.to(() => Dashboard()),
-                      onPressed: () {},
+                      onPressed: () => Get.to(() => Dashboard()),
                       child: const Text('Login'),
                       style: OutlinedButton.styleFrom(
                           elevation: 0.0,
