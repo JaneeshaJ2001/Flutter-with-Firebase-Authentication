@@ -1,5 +1,6 @@
+import "package:authentication_app/src/screens/login_screen.dart";
 import "package:flutter/material.dart";
-import "package:get/get.dart";
+import 'package:get/get.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -30,8 +31,7 @@ class WelcomeScreen extends StatelessWidget {
               children: [
                 Expanded(
                     child: ElevatedButton(
-                        //onPressed: () => Get.to(() => LoginScreen()),
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => LoginScreen()),
                         child: const Text('Login'),
                         style: OutlinedButton.styleFrom(
                             elevation: 0.0,
