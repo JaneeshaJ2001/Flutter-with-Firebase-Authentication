@@ -1,4 +1,5 @@
 import "package:authentication_app/src/screens/login_screen.dart";
+import "package:authentication_app/src/screens/signup_screen.dart";
 import "package:flutter/material.dart";
 import 'package:get/get.dart';
 
@@ -44,8 +45,7 @@ class WelcomeScreen extends StatelessWidget {
                 SizedBox(width: size * 0.01),
                 Expanded(
                     child: OutlinedButton(
-                        //onPressed: () => Get.to(() => SignUpScreen()),
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => SignUpScreen()),
                         child: const Text('Sign In'),
                         style: OutlinedButton.styleFrom(
                             shape: RoundedRectangleBorder(),

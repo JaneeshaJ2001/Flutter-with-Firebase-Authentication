@@ -1,3 +1,4 @@
+import 'package:authentication_app/src/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -79,8 +80,7 @@ class LoginScreen extends StatelessWidget {
                             onPressed: () {},
                             label: Text('sign in with google'))),
                     TextButton(
-                        //onPressed: () => Get.to(() => SignUpScreen()),
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => SignUpScreen()),
                         child: const Text.rich(
                             TextSpan(text: 'Dont have an account', children: [
                           TextSpan(
